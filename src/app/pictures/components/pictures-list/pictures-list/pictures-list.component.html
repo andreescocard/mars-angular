@@ -1,5 +1,6 @@
 <ul>
     <li *ngFor="let img of images">
-        {{img.img_src}}
+        
+        <img [src]="img.img_src" [alt]="img.title ? img.title : 'Mars Default'">
     </li>
 </ul>
