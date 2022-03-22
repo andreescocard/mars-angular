@@ -1,6 +1,9 @@
 <ul>
     <li *ngFor="let img of images">
-        
-        <img [src]="img.img_src" [alt]="img.title ? img.title : 'Mars Default'">
+        <img 
+        [src]="img.img_src" 
+        [alt]="img.title ? img.title : 'Mars Default'"
+        [attr.aria-label]="img.title"
+        >
     </li>
 </ul>
