@@ -1,1 +1,5 @@
-<p>picture-item works!</p>
+<img 
+        [src]="img?.img_src" 
+        [alt]="img?.title ? img?.title : 'Mars Default'"
+        [attr.aria-label]="img?.title"
+        >
