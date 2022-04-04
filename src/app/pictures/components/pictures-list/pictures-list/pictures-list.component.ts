@@ -8,10 +8,9 @@ import { PicturesService } from 'src/app/pictures/pictures.service';
   templateUrl: './pictures-list.component.html'
 })
 export class PicturesListComponent {
-  images: Picture[];
+  images = this.service.getImages();
   
-  constructor(){
-    const service = new PicturesService();
-    this.images = service.getImages();
+  constructor(private service: PicturesService){
+
   }
 }

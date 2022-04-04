@@ -1,6 +1,7 @@
 import { CommonModule } from "@angular/common";
 import { NgModule } from "@angular/core";
 import { PicturesListComponent } from "./components/pictures-list/pictures-list/pictures-list.component";
+import { PicturesService } from "./pictures.service";
 
 @NgModule({
     imports:[
@@ -9,7 +10,10 @@ import { PicturesListComponent } from "./components/pictures-list/pictures-list/
   declarations: [
     PicturesListComponent
   ], 
-  exports: [PicturesListComponent]
+  exports: [PicturesListComponent],
+  providers: [ 
+    PicturesService
+  ]
 })
 export class PicturesModule {
     constructor(){

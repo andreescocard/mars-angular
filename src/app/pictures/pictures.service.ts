@@ -1,5 +1,6 @@
+import { Injectable } from "@angular/core";
 import { Picture } from "./pictures.models";
-
+@Injectable()
 export class PicturesService {
     getImages():Picture[]{
         return [
